@@ -39,6 +39,8 @@ export const useTodosMethods = () => {
   // Remove todo item
   const handleDeleteTodo = (id: number) => {
     dispatch(removeTodo(id));
+    setSelectedItemId(null);
+    setUpdateTodoText('');
   };
 
   const handleUpdateTodoText = (text: string) => {

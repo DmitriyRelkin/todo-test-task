@@ -56,6 +56,9 @@ export const getTodoListStyles = () =>
       justifyContent: 'center',
       borderRadius: 12,
     },
+    disabledBtnStyle: {
+      opacity: .7,
+    },
     addBtnText: {
       color: 'white',
       fontSize: 14,

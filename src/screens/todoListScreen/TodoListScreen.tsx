@@ -20,6 +20,7 @@ const TodoListScreen: React.FC = () => {
     addBtnStyle,
     addBtnText,
     todoList,
+    disabledBtnStyle,
   } = getTodoListStyles();
 
   const {
@@ -53,7 +54,7 @@ const TodoListScreen: React.FC = () => {
           onChangeText={handleUpdateTodoText}
           value={inputValue}
         />
-        <TouchableOpacity style={addBtnStyle} onPress={onPress}>
+        <TouchableOpacity disabled={!inputValue} style={[addBtnStyle, !inputValue && disabledBtnStyle]} onPress={onPress}>
           <Text style={addBtnText}>{buttonText}</Text>
         </TouchableOpacity>
       </View>
