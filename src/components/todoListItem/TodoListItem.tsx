@@ -2,6 +2,9 @@ import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 import { ITodo } from "../../store/slices/todoSlice";
 import { getTodoItemStyles } from "./styles";
+import { defaultTexts } from "../../consts/texts";
+
+const { deleteBtnText } = defaultTexts;
 
 interface ITodoListItemProps {
   todo: ITodo;
@@ -25,7 +28,7 @@ const TodoListItem: React.FC<ITodoListItemProps> = ({ todo, onSelect, onDeleteTo
     <TouchableOpacity testID="todo-item" onPress={onPress} style={[container, isSelected && selectedItemStyle]}>
       <Text style={title}>{todo.text}</Text>
       <TouchableOpacity testID="delete-button" style={deleteButton} onPress={handleDeleteTodo}>
-        <Text style={deleteButtonText}>DELETE</Text>
+        <Text style={deleteButtonText}>{deleteBtnText}</Text>
       </TouchableOpacity>
     </TouchableOpacity>
   );

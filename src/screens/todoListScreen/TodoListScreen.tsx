@@ -7,6 +7,9 @@ import { useTodosMethods } from "../../hooks/useTodosMethods";
 import { getTodosSelector } from "../../store/selectors/todosSelectors";
 import { ITodo } from "../../store/slices/todoSlice";
 import Delimiter from "../../components/delimiter/Delimiter";
+import {defaultTexts} from "../../consts/texts";
+
+const { todoTitle, todoSubTitle, placeholderTodoText } = defaultTexts;
 
 const TodoListScreen: React.FC = () => {
   const todos = useSelector(getTodosSelector);
@@ -44,12 +47,12 @@ const TodoListScreen: React.FC = () => {
 
   return (
     <View style={container}>
-      <Text style={title}>Todo List</Text>
-      <Text style={subTitle}>Add some new plans here ;)</Text>
+      <Text style={title}>{todoTitle}</Text>
+      <Text style={subTitle}>{todoSubTitle}</Text>
 
       <View style={todoInputWrapper}>
         <TextInput
-          placeholder={'Enter here'}
+          placeholder={placeholderTodoText}
           style={todoInput}
           onChangeText={handleUpdateTodoText}
           value={inputValue}

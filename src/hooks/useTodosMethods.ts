@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { addTodo, updateTodo, ITodo, removeTodo } from "../store/slices/todoSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { getTodoItemByIdSelector } from "../store/selectors/todosSelectors";
+import {defaultTexts} from "../consts/texts";
+
+const { addBtnText, updateBtnText } = defaultTexts;
 
 export const useTodosMethods = () => {
   // State value of selected todo item
@@ -20,7 +23,7 @@ export const useTodosMethods = () => {
   }, [selectedItemId]);
 
   // Title value for add / update button
-  const buttonText = selectedItemId ? 'UPDATE' : 'ADD';
+  const buttonText = selectedItemId ? updateBtnText : addBtnText;
   // text input value
   const inputValue = selectedItemId ? updateTodoText : newTodoText;
 
