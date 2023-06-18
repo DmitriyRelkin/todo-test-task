@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Delimiter Should render component 1`] = `
+<View
+  style={
+    {
+      "borderBottomColor": "#86a5aa",
+      "borderBottomWidth": 2,
+      "marginBottom": 5,
+      "paddingTop": 15,
+      "width": "100%",
+    }
+  }
+/>
+`;

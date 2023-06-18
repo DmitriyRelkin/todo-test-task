@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthScreen calls onAuthenticate when the button is pressed 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#86a5aa",
+        "borderRadius": 12,
+        "justifyContent": "center",
+        "opacity": 1,
+        "padding": 10,
+      }
+    }
+    testID="auth-button"
+  >
+    <Text
+      style={
+        {
+          "color": "white",
+          "fontSize": 14,
+          "fontWeight": "600",
+        }
+      }
+    >
+      Authenticate
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`AuthScreen renders the AuthScreen screen correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#86a5aa",
+        "borderRadius": 12,
+        "justifyContent": "center",
+        "opacity": 1,
+        "padding": 10,
+      }
+    }
+    testID="auth-button"
+  >
+    <Text
+      style={
+        {
+          "color": "white",
+          "fontSize": 14,
+          "fontWeight": "600",
+        }
+      }
+    >
+      Authenticate
+    </Text>
+  </View>
+</View>
+`;
